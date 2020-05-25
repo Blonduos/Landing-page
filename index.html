@@ -1,0 +1,191 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FCC Project Landing Page</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="header">
+
+        <div class="container container--nav">
+            <a href="#" class="logo">YogaLand</a>
+            
+            <input type="checkbox" id="nav-toggle" class="nav-toggle">
+            <nav class="nav">
+                <ul class="nav__list">
+                    <li class="nav__item"><a href="#" class="nav__link">Home</a></li>
+                    <li class="nav__item"><a href="#explore" class="nav__link">Explore</a></li>
+                    <li class="nav__item"><a href="#pricing" class="nav__link">Pricing</a></li>
+                </ul>
+    
+                <ul class="nav__list nav__list--btns">
+                    <li class="nav__item"><a href="#" class="nav__btn">Sign in</a></li>
+                    <li class="nav__item"><a href="#" class="nav__btn nav__btn--signup">Sign up</a></li>
+                </ul>
+            </nav>
+            <label for="nav-toggle" class="nav-toggle-label"><span class="nav-toggle-label-span"></span></label>
+        </div>
+
+    </header>
+
+    <main class="main_content">
+
+        <div class="light_background">
+            <div class="container row">
+                <div class="hero col">
+                    <h1 class="hero__h1">YogaLand</h1>
+                    <p class="site__p hero__p">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent tincidunt finibus purus, quis accumsan quam facilisis sed. Suspendisse id sapien facilisis, fringilla elit porttitor, consectetur ante. Proin ullamcorper nibh maximus lorem iaculis, eu commodo metus tempor.</p>
+                    <div class="hero__btns">
+                        <a href="#" class="btn btn__primary">Read more</a>
+                        <a href="#" class="btn btn__secondary">Sign up</a>
+                    </div>
+                </div>
+                <img src="/images/yoga2.png" alt="illustration of woman inside a room doing yoga on a yoga mat in red pants and a black cat sleeping on her back" class="hero__img col">
+            </div>
+        </div>
+
+        <div class="accent-background" id="explore">
+            <div class="container row">
+                <div class="explore col">
+                    <h2 class="explore__h2">Explore with us</h2>
+                    <img src="/images/meditation.png" class="explore__img" alt="illustration ofwoman sitting under decoration meditating">
+                </div>
+                <div class="col">
+                    <h3 class="explore__h3">What we offer</h3>
+                    <p class="site__p">Cras vel varius metus. Integer at elementum quam. Aliquam tempus odio eu arcu ultricies molestie. Mauris scelerisque ante magna, quis interdum libero vehicula vel. Phasellus quis gravida orci. Duis semper blandit lacinia. Donec imperdiet ante et porttitor scelerisque. Sed molestie sapien aliquet purus sagittis elementum. Vestibulum pulvinar velit vitae ipsum consectetur dictum sed et lectus.</p>
+                    <p class="site__p">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent tincidunt finibus purus, quis accumsan quam facilisis sed. Suspendisse id sapien facilisis, fringilla elit porttitor, consectetur ante. Proin ullamcorper nibh maximus lorem iaculis, eu commodo metus tempor. Donec venenatis eleifend diam id fringilla.</p>
+                    <p class="site__p">Nulla feugiat enim lorem, non sollicitudin nulla malesuada ut. Curabitur tempor, lectus sit amet fermentum tempor, neque eros tristique sapien, nec elementum urna nulla at tellus. Quisque et tristique sapien, at commodo magna. Morbi in ante quis ligula ultrices rhoncus non ut ipsum. Phasellus vel viverra ipsum. Cras convallis viverra suscipit. Integer odio enim, pellentesque finibus lorem semper, congue sodales metus. Donec nec mattis dui. Morbi at porttitor leo, vitae cursus nisi.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="light-background">
+            <div class="container">
+                <h2 class="promo-video__h2">Yoga from home</h2>
+                <div class="video-container">
+                    <div class="iframe-container promo-video--container">
+                        <iframe src="https://player.vimeo.com/video/47983018" width="640" height="360" frameborder="0" allow="fullscreen" allowfullscreen></iframe>
+                        <p><a href="https://vimeo.com/47983018">Param Yoga</a> from <a href="https://vimeo.com/felixreichert">Felix Reichert</a> on <a href="https://vimeo.com">Vimeo</a>.</p>
+                    </div>
+                </div>  
+            </div>
+        </div>
+
+        <div class="accent-background">
+            <div class="container">
+                <section class="newsletter">
+                    <h2 class="newsletter__h2">Newsletter</h2>
+
+                    <div class="newsletter-form__container">
+                        <h4 class="newsletter__h4">Subscribe to our newsletter and get 1 month of YogaLand Basic for free!</h4>
+                    	<form action="https://www.freecodecamp.com/email-submit" class="newsletter__form" id="form">
+                    	    <label for="email" class="form__email-label">Email</label>
+                            <input type="email" id="email" placeholder="Enter email" class="form__email-input" required>
+                            <button class="form__submit" type="submit">Subscribe</button>
+                    	</form>
+                    </div>
+
+                    <img src="/images/newsletter2.png" class="newsletter__img" alt="illustration of a man with dark beard sitting on knees and letters aka newsletters floating beside him">
+                </section>
+            </div>
+        </div>
+
+        <div class="light_background" id="pricing">
+            <div class="container">
+                <section class="card-section">
+                    <h2 class="card-section__h2">Pricing</h2>
+
+                    <div class="card-elements">
+                        
+                        <div class="card-container">
+                            <div class="card-container__pricing">
+                                
+                                <div class="pricing__container">
+                                	<div class="pricing__dollar">$</div>
+                                	<div class="pricing__price">10</div>
+                                	<div class="pricing__month">/mo</div>
+                                </div>
+
+                                <div class="pricing__plan">Basic</div>
+
+                            </div>
+                            <div class="card-container__features">
+                                <p class="features__feature">Access to beginner videos</p>
+                                <p class="features__feature">Healthy lifestyle booklets</p>
+                                <p class="features__feature features__feature--excluded">Access to intermediate yoga and meditation videos</p>
+                                <p class="features__feature features__feature--excluded">Downloadable materials for consistent home practice</p>
+                                <p class="features__feature features__feature--excluded">Unlimited access to all yoga, meditation and healthy lifestyle videos</p>
+                                <p class="features__feature features__feature--excluded">Individual support and practices with our teachers</p>
+                            </div>
+                            <a href="#" class="btn btn__primary btn__primary--card">Purchase</a>
+                        </div>
+    
+                        <div class="card-container card-container--popular">
+                            <div class="card-container__pricing">
+                                <div class="popular">Popular</div>
+
+                                <div class="pricing__container pricing__container--popular">
+                                	<div class="pricing__dollar">$</div>
+                                	<div class="pricing__price">25</div>
+                                	<div class="pricing__month">/mo</div>
+                                </div>
+
+                                <div class="pricing__plan">Standard</div>
+
+                            </div>
+                            <div class="card-container__features card-container__features--popular">
+                                <p class="features__feature">Access to beginner videos</p>
+                                <p class="features__feature">Healthy lifestyle booklets</p>
+                                <p class="features__feature">Access to intermediate yoga and meditation videos</p>
+                                <p class="features__feature">Downloadable materials for consistent home practice</p>
+                                <p class="features__feature features__feature--excluded">Unlimited access to all yoga, meditation and healthy lifestyle videos</p>
+                                <p class="features__feature features__feature--excluded">Individual support and practices with our teachers</p>
+                            </div>
+                            <a href="#" class="btn btn__primary btn__primary--card btn__primary--card-popular">Purchase</a>
+                        </div>
+    
+                        <div class="card-container">
+                            <div class="card-container__pricing">
+
+                                <div class="pricing__container">
+                                	<div class="pricing__dollar">$</div>
+                                	<div class="pricing__price">40</div>
+                                	<div class="pricing__month">/mo</div>
+                                </div>
+
+                                <div class="pricing__plan">Advanced</div>
+
+                            </div>
+                            <div class="card-container__features">
+                                <p class="features__feature">Access to beginner videos</p>
+                                <p class="features__feature">Healthy lifestyle booklets</p>
+                                <p class="features__feature">Access to intermediate yoga and meditation videos</p>
+                                <p class="features__feature">Downloadable materials for consistent home practice</p>
+                                <p class="features__feature">Unlimited access to all yoga, meditation and healthy lifestyle videos</p>
+                                <p class="features__feature">Individual support and practices with our teachers</p>
+                            </div>
+                                <a href="#" class="btn btn__primary btn__primary--card">Purchase</a>
+                        </div>
+
+                    </div>
+
+                </section>
+            </div>
+        </div>
+
+
+        <div class="accent-background">
+            <div class="container container--nav row">
+                <div class="footer__div">
+                    <a href="#" class="logo">YogaLand</a>
+                    <p class="footer__copyright">@Copyright Blonduos</p>
+                </div>
+                <p class="footer__p">This project was built as practice for the FCC responsive web design certification</p>
+            </div>
+        </div>
+    </main>
+</body>
+</html>
