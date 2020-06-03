@@ -216,10 +216,10 @@ Layout
           transform: scale(1, 0);
   -webkit-transform-origin: top;
           transform-origin: top;
-  -webkit-transition: -webkit-transform 300ms ease-in-out;
-  transition: -webkit-transform 300ms ease-in-out;
-  transition: transform 300ms ease-in-out;
-  transition: transform 300ms ease-in-out, -webkit-transform 300ms ease-in-out;
+  -webkit-transition: background 250ms ease-in-out, -webkit-transform 300ms ease-in-out;
+  transition: background 250ms ease-in-out, -webkit-transform 300ms ease-in-out;
+  transition: transform 300ms ease-in-out, background 250ms ease-in-out;
+  transition: transform 300ms ease-in-out, background 250ms ease-in-out, -webkit-transform 300ms ease-in-out;
 }
 
 .nav__list {
