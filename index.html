@@ -5,24 +5,25 @@
     <title>FCC Project Landing Page</title>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700;900&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="scss/main.scss">
 </head>
 <body>
     <header class="header">
 
         <div class="container container--nav">
-            <a href="#" class="logo">YogaLand</a>
-            
+            <a href="#home" class="logo">YogaLand</a>
+
             <input type="checkbox" id="nav-toggle" class="nav-toggle">
             <nav class="nav">
                 <ul class="nav__list">
-                    <li class="nav__item"><a href="#" class="nav__link">Home</a></li>
-                    <li class="nav__item"><a href="#explore" class="nav__link">Explore</a></li>
-                    <li class="nav__item"><a href="#pricing" class="nav__link">Pricing</a></li>
+                    <li class="nav__item nav__item--link"><a href="#home" class="nav__link">Home</a></li>
+                    <li class="nav__item nav__item--link"><a href="#newsletter" class="nav__link">Newsletter</a></li>
+                    <li class="nav__item nav__item--link"><a href="#explore" class="nav__link">Explore</a></li>
+                    <li class="nav__item nav__item--link"><a href="#pricing" class="nav__link">Pricing</a></li>
                 </ul>
     
                 <ul class="nav__list nav__list--btns">
-                    <li class="nav__item"><a href="#" class="nav__btn">Sign in</a></li>
+                    <li class="nav__item nav__item-btn"><a href="#" class="nav__btn">Sign in</a></li>
                     <li class="nav__item"><a href="#" class="nav__btn nav__btn--signup">Sign up</a></li>
                 </ul>
             </nav>
@@ -33,7 +34,7 @@
 
     <main class="main_content">
 
-        <div class="light_background">
+        <div class="light_background home-intro" id="home">
             <div class="container row">
                 <div class="hero col">
                     <h1 class="hero__h1">YogaLand</h1>
@@ -66,6 +67,7 @@
             <div class="container">
                 <h2 class="promo-video__h2">Yoga from home</h2>
                 <div class="video-container">
+                    <p class="site__p" id="video__p">Cras vel varius metus. Integer at elementum quam. Aliquam tempus odio eu arcu ultricies molestie. Mauris scelerisque ante magna, quis interdum libero vehicula vel. Phasellus quis gravida orci. Duis semper blandit lacinia. Donec imperdiet ante et porttitor scelerisque. Sed molestie sapien aliquet purus sagittis elementum. Vestibulum pulvinar velit vitae ipsum consectetur dictum sed et lectus.</p>
                     <div class="iframe-container promo-video--container">
                         <iframe src="https://player.vimeo.com/video/47983018" width="640" height="360" frameborder="0" allow="fullscreen" allowfullscreen></iframe>
                         <p><a href="https://vimeo.com/47983018">Param Yoga</a> from <a href="https://vimeo.com/felixreichert">Felix Reichert</a> on <a href="https://vimeo.com">Vimeo</a>.</p>
@@ -74,7 +76,7 @@
             </div>
         </div>
 
-        <div class="accent-background">
+        <div class="accent-background" id="newsletter">
             <div class="container">
                 <section class="newsletter">
                     <h2 class="newsletter__h2">Newsletter</h2>
@@ -187,5 +189,9 @@
             </div>
         </div>
     </main>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="sandbox.js"></script>
+
 </body>
 </html>
